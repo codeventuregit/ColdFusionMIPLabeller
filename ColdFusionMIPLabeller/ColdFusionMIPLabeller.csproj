@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    
+    <!-- NuGet Package Metadata -->
+    <PackageId>ColdFusionMIPLabeller</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>ColdFusion MIP Labeller Contributors</Authors>
+    <Company>Open Source</Company>
+    <Description>A .NET library that enables ColdFusion applications to apply Microsoft Purview sensitivity labels to Office documents using the Microsoft Information Protection (MIP) SDK.</Description>
+    <PackageTags>coldfusion;mip;microsoft-information-protection;sensitivity-labels;office;purview</PackageTags>
+    <PackageProjectUrl>https://github.com/yourusername/ColdFusionMIPLabeller</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yourusername/ColdFusionMIPLabeller</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.InformationProtection.File" Version="1.17.158" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.61.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
